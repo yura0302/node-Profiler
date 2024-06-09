@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20200603 김유라</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h1>Profiler Data Visualization</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" name="inputFile" id="inputFile" />
+      <button type="submit">업로드</button>
+    </form>
+    <div>
+      <label for="chartType">차트 선택 :</label>
+      <select id="chartType">
+        <option value="bar">막대 그래프</option>
+        <option value="line">선 그래프</option>
+        <option value="scatter">산점도 그래프</option>
+      </select>
+    </div>
+    <canvas id="myChart" width="1000" height="500"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
