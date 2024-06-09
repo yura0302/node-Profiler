@@ -33,9 +33,15 @@
 ### 개발 환경 실행
 
 ```c
-node app.js
+mysql -u root -p
 ```
 
+MySQL 클라이언트에서 직접 연결을 시도합니다.
+app.js에서 password를 입력하여 연결합니다. 
+
+```c
+node app.js
+```
 위 명령어 터미널에서 실행 후 http://localhost:3000 으로 접속
 
 ## 디렉토리 구조
